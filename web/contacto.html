@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto | ASUDATA — Agendá tu llamada gratuita</title>
+<meta name="description" content="Agendá una llamada gratuita con Andrés Meza. Te mostramos cómo se vería tu dashboard en 10 minutos. Sin compromiso.">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+<style>
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 64px;
+  align-items: start;
+  padding: 100px 60px;
+}
+
+.contact-info h2 { margin-bottom: 12px; }
+.contact-info .sub { margin-bottom: 36px; }
+
+.what-to-expect {
+  background: var(--navy);
+  border: 1px solid var(--navy-bd);
+  border-radius: 16px;
+  padding: 28px 28px;
+  margin-bottom: 32px;
+}
+.what-to-expect h4 {
+  font-family: 'Syne', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--gray);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.expect-list { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+.expect-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 15px;
+  color: var(--white);
+  line-height: 1.5;
+}
+.expect-check {
+  width: 22px; height: 22px;
+  border-radius: 50%;
+  background: rgba(0,212,232,0.12);
+  border: 1px solid rgba(0,212,232,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  color: var(--cyan);
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.contact-channels { display: flex; flex-direction: column; gap: 14px; }
+.contact-channel {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 18px;
+  background: var(--navy);
+  border: 1px solid var(--navy-bd);
+  border-radius: 12px;
+  text-decoration: none;
+  transition: border-color 0.2s;
+}
+.contact-channel:hover { border-color: rgba(0,212,232,0.3); }
+.channel-icon { font-size: 20px; flex-shrink: 0; }
+.channel-label { font-size: 11px; color: var(--gray); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 2px; }
+.channel-value { font-size: 15px; color: var(--white); font-weight: 500; }
+
+/* Form success message */
+.form-success {
+  display: none;
+  text-align: center;
+  padding: 48px 40px;
+}
+.form-success.visible { display: block; }
+.form-success-icon { font-size: 56px; margin-bottom: 16px; }
+.form-success h3 { font-family: 'Syne', sans-serif; font-size: 24px; font-weight: 800; color: var(--green); margin-bottom: 10px; }
+.form-success p { font-size: 16px; color: var(--gray); line-height: 1.65; }
+
+@media (max-width: 900px) {
+  .contact-layout { grid-template-columns: 1fr; gap: 48px; padding: 80px 32px; }
+}
+@media (max-width: 600px) {
+  .contact-layout { padding: 60px 20px; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="logo">AsuData<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="soluciones.html">Servicios</a></li>
+    <li><a href="industrias.html">Industrias</a></li>
+    <li><a href="paquetes.html">Paquetes</a></li>
+    <li><a href="nosotros.html">Nosotros</a></li>
+    <li><a href="contacto.html" class="nav-cta">Agendar llamada</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Abrir menú">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-grid"></div>
+  <div class="page-hero-content">
+    <div class="breadcrumb">
+      <a href="index.html">Inicio</a>
+      <sep>/</sep>
+      <span>Contacto</span>
+    </div>
+    <span class="tag">Hablemos</span>
+    <h1>En 10 minutos sabés si <em>podemos ayudarte.</em></h1>
+    <p style="font-size:18px; color:var(--gray); line-height:1.65; max-width:620px;">Contanos de tu empresa y te mostramos exactamente cómo se vería tu dashboard. Sin compromiso, sin tecnicismos, sin presión.</p>
+  </div>
+</div>
+
+<!-- CONTACT LAYOUT -->
+<div class="contact-layout">
+
+  <!-- LEFT: INFO -->
+  <div class="contact-info">
+    <span class="tag">Primera consulta</span>
+    <h2>¿Qué pasa en <em>la llamada?</em></h2>
+    <p class="sub">Es una conversación de negocio, no una presentación de ventas.</p>
+
+    <div class="what-to-expect">
+      <h4>En la llamada gratuita:</h4>
+      <ul class="expect-list">
+        <li><span class="expect-check">✓</span>Entendemos tu negocio en lenguaje simple, sin tecnicismos</li>
+        <li><span class="expect-check">✓</span>Te mostramos ejemplos de dashboards similares al tuyo</li>
+        <li><span class="expect-check">✓</span>Te decimos exactamente qué solución necesitás (y cuál no)</li>
+        <li><span class="expect-check">✓</span>Te damos un presupuesto real sin compromisos</li>
+        <li><span class="expect-check">✓</span>Si no podemos ayudarte, te orientamos a quién sí puede</li>
+      </ul>
+    </div>
+
+    <div class="contact-channels">
+      <a href="mailto:info@asudata.net" class="contact-channel">
+        <span class="channel-icon">✉️</span>
+        <div>
+          <div class="channel-label">Email</div>
+          <div class="channel-value">info@asudata.net</div>
+        </div>
+      </a>
+      <a href="https://wa.me/595985309007" class="contact-channel">
+        <span class="channel-icon">💬</span>
+        <div>
+          <div class="channel-label">WhatsApp</div>
+          <div class="channel-value">+595 0985 309 007</div>
+        </div>
+      </a>
+      <a href="tel:+5950985309007" class="contact-channel">
+        <span class="channel-icon">📞</span>
+        <div>
+          <div class="channel-label">Llamada directa</div>
+          <div class="channel-value">+595 0985 309 007</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- RIGHT: FORM -->
+  <div>
+    <div class="form-wrap">
+      <!-- Form success -->
+      <div class="form-success" id="formSuccess">
+        <div class="form-success-icon">🎉</div>
+        <h3>¡Mensaje enviado!</h3>
+        <p>Andrés se va a comunicar con vos dentro de las próximas 24 horas hábiles. Si necesitás respuesta urgente, escribile directamente al WhatsApp.</p>
+        <a href="https://wa.me/595985309007" class="btn btn-primary" style="margin-top:24px; display:inline-flex;">Escribir por WhatsApp →</a>
+      </div>
+
+      <form
+        action="https://formsubmit.co/info@asudata.net"
+        method="POST"
+        id="contactForm"
+      >
+        <input type="hidden" name="_subject" value="Nueva consulta desde asudata.net">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://asudata.net/contacto.html?enviado=1">
+        <input type="text" name="_honey" style="display:none;">
+
+        <div style="margin-bottom:28px;">
+          <h3 style="margin-bottom:6px;">Contanos de tu empresa</h3>
+          <p style="font-size:14px; color:var(--gray);">Completá el formulario y te contactamos en menos de 24 horas.</p>
+        </div>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="nombre">Nombre completo *</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Juan Pérez" required>
+          </div>
+          <div class="form-group">
+            <label for="empresa">Empresa *</label>
+            <input type="text" id="empresa" name="empresa" placeholder="Mi Empresa S.A." required>
+          </div>
+          <div class="form-group">
+            <label for="industria">Industria</label>
+            <select id="industria" name="industria">
+              <option value="">Seleccioná tu sector</option>
+              <option>Constructora</option>
+              <option>Retail / Tienda</option>
+              <option>Restaurante / Gastronomía</option>
+              <option>Taller mecánico</option>
+              <option>Playa de autos</option>
+              <option>Distribuidora</option>
+              <option>Multitiendas / Cadena</option>
+              <option>Servicios profesionales</option>
+              <option>Manufactura / Industria</option>
+              <option>Otro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="tamano">Tamaño de la empresa</label>
+            <select id="tamano" name="tamano">
+              <option value="">¿Cuántas personas trabajan?</option>
+              <option>1-10 personas</option>
+              <option>11-50 personas</option>
+              <option>51-200 personas</option>
+              <option>Más de 200</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" placeholder="juan@miempresa.com.py" required>
+          </div>
+          <div class="form-group">
+            <label for="telefono">WhatsApp / Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="+595 0981 123 456">
+          </div>
+          <div class="form-group full">
+            <label for="mensaje">¿Cuál es tu principal problema con los datos? *</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Ej: Pasamos horas armando reportes de ventas a mano cada semana y cuando están listos, ya la información está desactualizada. Tenemos Excel por todos lados y nadie sabe cuál es el correcto..." required></textarea>
+          </div>
+          <div class="form-group full">
+            <label for="plan">¿Qué paquete te interesa?</label>
+            <select id="plan" name="plan">
+              <option value="">No sé todavía / Quiero asesoría</option>
+              <option>SPARK — $249 USD (un dashboard)</option>
+              <option>PULSE — $300 USD (todo el negocio + IA)</option>
+              <option>EDGE — A medida (empresa grande)</option>
+            </select>
+          </div>
+          <div class="form-group full">
+            <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; padding:16px;">Enviar y agendar llamada →</button>
+          </div>
+        </div>
+
+        <p class="form-note">🔒 Tus datos son confidenciales. No compartimos información con terceros.</p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- ALTERNATIVAS -->
+<section class="bg2" style="padding:60px;">
+  <div style="max-width:800px; margin:0 auto; text-align:center;">
+    <span class="tag">¿Preferís otra vía?</span>
+    <h2 style="margin-bottom:12px;">Elegí cómo <em>contactarnos.</em></h2>
+    <p style="font-size:16px; color:var(--gray); margin-bottom:48px;">Respondemos siempre. Elegí el canal que más te quede cómodo.</p>
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:16px; max-width:720px; margin:0 auto;">
+      <a href="https://wa.me/595985309007?text=Hola Andrés, me interesa saber más sobre ASUDATA" class="contact-channel" style="flex-direction:column; text-align:center; padding:28px; gap:10px;">
+        <span style="font-size:32px;">💬</span>
+        <div>
+          <div class="channel-label">WhatsApp</div>
+          <div class="channel-value" style="font-size:13px;">Respuesta rápida</div>
+        </div>
+      </a>
+      <a href="mailto:info@asudata.net?subject=Consulta ASUDATA" class="contact-channel" style="flex-direction:column; text-align:center; padding:28px; gap:10px;">
+        <span style="font-size:32px;">✉️</span>
+        <div>
+          <div class="channel-label">Email</div>
+          <div class="channel-value" style="font-size:13px;">info@asudata.net</div>
+        </div>
+      </a>
+      <a href="https://linkedin.com" class="contact-channel" style="flex-direction:column; text-align:center; padding:28px; gap:10px;">
+        <span style="font-size:32px;">💼</span>
+        <div>
+          <div class="channel-label">LinkedIn</div>
+          <div class="channel-value" style="font-size:13px;">Andrés Meza</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div>
+    <a href="index.html" class="footer-logo">AsuData<span>.</span></a>
+    <p class="footer-tagline">Convertimos tus datos en decisiones. Paraguay & Latam.</p>
+    <div class="footer-socials">
+      <a href="#" title="LinkedIn">in</a>
+      <a href="#" title="Instagram">ig</a>
+      <a href="#" title="TikTok">tt</a>
+      <a href="#" title="Facebook">fb</a>
+    </div>
+  </div>
+  <div class="footer-col">
+    <h4>Servicios</h4>
+    <ul>
+      <li><a href="soluciones.html#dashboards">Dashboards</a></li>
+      <li><a href="soluciones.html#automatizacion">Automatización</a></li>
+      <li><a href="soluciones.html#ia">IA Aplicada</a></li>
+      <li><a href="paquetes.html">Ver paquetes</a></li>
+    </ul>
+  </div>
+  <div class="footer-col">
+    <h4>Empresa</h4>
+    <ul>
+      <li><a href="nosotros.html">Quiénes somos</a></li>
+      <li><a href="industrias.html">Industrias</a></li>
+      <li><a href="nosotros.html#valores">Nuestros valores</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </div>
+  <div class="footer-col">
+    <h4>Contacto</h4>
+    <ul>
+      <li><a href="mailto:info@asudata.net">info@asudata.net</a></li>
+      <li><a href="tel:+5950985309007">+595 0985 309 007</a></li>
+      <li><a href="https://wa.me/595985309007">WhatsApp</a></li>
+      <li><a href="contacto.html">Agendar llamada</a></li>
+    </ul>
+  </div>
+</footer>
+<div class="footer-bottom">
+  <p>© 2026 ASUDATA. Fundada por Andrés Meza. Todos los derechos reservados.</p>
+  <p><a href="#">Política de privacidad</a></p>
+</div>
+
+<script src="js/main.js"></script>
+<script>
+const form = document.getElementById('contactForm');
+const success = document.getElementById('formSuccess');
+
+if (new URLSearchParams(location.search).has('enviado')) {
+  form.style.display = 'none';
+  success.classList.add('visible');
+}
+
+if (form) {
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const data = new FormData(form);
+    try {
+      await fetch(form.action, { method: 'POST', body: data, headers: { 'Accept': 'application/json' } });
+      form.style.display = 'none';
+      success.classList.add('visible');
+    } catch {
+      form.submit();
+    }
+  });
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiénes somos | ASUDATA — Andrés Meza, fundador</title>
+<meta name="description" content="ASUDATA nació para democratizar la inteligencia de datos en Paraguay. Conocé la historia de Andrés Meza y por qué hacemos esto.">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+<style>
+.story-section { padding: 100px 60px; }
+.story-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+.story-quote {
+  position: relative;
+  padding: 32px 36px;
+  background: rgba(0,212,232,0.05);
+  border: 1px solid rgba(0,212,232,0.15);
+  border-radius: 16px;
+  margin-top: 32px;
+}
+.story-quote::before {
+  content: '"';
+  font-family: 'Syne', sans-serif;
+  font-size: 80px;
+  color: var(--cyan);
+  opacity: 0.2;
+  position: absolute;
+  top: 8px; left: 20px;
+  line-height: 1;
+}
+.story-quote p { font-size: 18px; color: var(--white); line-height: 1.7; font-style: italic; position: relative; z-index: 1; }
+.story-quote cite { display: block; font-size: 13px; color: var(--cyan); font-style: normal; font-weight: 600; margin-top: 12px; }
+
+.values-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+.mission-card {
+  background: var(--navy);
+  border: 1px solid var(--navy-bd);
+  border-radius: 16px;
+  padding: 36px 32px;
+  text-align: center;
+}
+.mission-icon { font-size: 40px; margin-bottom: 16px; }
+.mission-label { font-size: 11px; color: var(--cyan); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; }
+.mission-text { font-size: 17px; color: var(--white); line-height: 1.6; font-style: italic; }
+
+.timeline { display: flex; flex-direction: column; gap: 0; }
+.timeline-item {
+  display: flex;
+  gap: 24px;
+  padding-bottom: 32px;
+  position: relative;
+}
+.timeline-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: 19px; top: 44px; bottom: 0;
+  width: 1px;
+  background: var(--navy-bd);
+}
+.timeline-dot {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background: var(--navy);
+  border: 2px solid var(--navy-bd);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 16px;
+  z-index: 1;
+}
+.timeline-item.active .timeline-dot { border-color: var(--cyan); background: var(--cyan-soft); }
+.timeline-content { padding-top: 8px; }
+.timeline-year { font-size: 12px; color: var(--cyan); font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 4px; }
+.timeline-title { font-family: 'Syne', sans-serif; font-size: 16px; font-weight: 700; margin-bottom: 6px; }
+.timeline-text { font-size: 14px; color: var(--gray); line-height: 1.6; }
+
+@media (max-width: 900px) {
+  .story-section { padding: 80px 32px; }
+  .story-wrap { grid-template-columns: 1fr; gap: 48px; }
+  .values-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .story-section { padding: 60px 20px; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="logo">AsuData<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="soluciones.html">Servicios</a></li>
+    <li><a href="industrias.html">Industrias</a></li>
+    <li><a href="paquetes.html">Paquetes</a></li>
+    <li><a href="nosotros.html">Nosotros</a></li>
+    <li><a href="contacto.html" class="nav-cta">Agendar llamada</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Abrir menú">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-grid"></div>
+  <div class="page-hero-content">
+    <div class="breadcrumb">
+      <a href="index.html">Inicio</a>
+      <sep>/</sep>
+      <span>Nosotros</span>
+    </div>
+    <span class="tag">Quiénes somos</span>
+    <h1>Somos <em>ASUDATA.</em></h1>
+    <p style="font-size:18px; color:var(--gray); line-height:1.65; max-width:620px;">Hacemos que los datos de tu negocio trabajen para vos. No para IT. No para el proveedor de software. Para vos.</p>
+  </div>
+</div>
+
+<!-- HISTORIA -->
+<section class="story-section">
+  <div class="story-wrap">
+    <div>
+      <span class="tag">La historia</span>
+      <h2>Nació de ver <em>negocios con datos pero sin claridad.</em></h2>
+      <p style="font-size:16px; color:var(--gray); line-height:1.7; margin-bottom:24px;">En Paraguay, cientos de empresas generan datos todos los días — ventas, compras, producción, clientes. Pero la mayoría no puede aprovecharlos porque están atrapados en Excel, dispersos entre áreas, o simplemente no hay nadie que los analice.</p>
+      <p style="font-size:16px; color:var(--gray); line-height:1.7; margin-bottom:24px;">Las grandes consultoras están fuera del presupuesto de una PYME. Los analistas freelance no conocen el negocio. Y los softwares genéricos tampoco se adaptan a la realidad paraguaya.</p>
+      <p style="font-size:16px; color:var(--gray); line-height:1.7;">ASUDATA nació para resolver eso: traer inteligencia de datos real, práctica y accesible a las empresas que más la necesitan.</p>
+      <div class="story-quote">
+        <p>"Siempre creí que una empresa no necesita ser grande para tomar decisiones con datos. Lo que necesita es al alguien que entienda su negocio primero — y la tecnología después."</p>
+        <cite>— Andrés Meza, fundador de ASUDATA</cite>
+      </div>
+    </div>
+    <div>
+      <div class="team-card">
+        <div class="team-avatar">AM</div>
+        <div class="team-name">Andrés Meza</div>
+        <div class="team-role">Fundador & Director</div>
+        <p class="team-bio">Especialista en Business Intelligence e implementación de dashboards para PYMEs en Paraguay y Latam. Combina conocimiento del negocio con herramientas de datos de clase mundial — siempre con foco en resultados prácticos y medibles.</p>
+        <div class="team-links">
+          <a href="https://linkedin.com" class="team-link">LinkedIn →</a>
+          <a href="mailto:andres@asudata.net" class="team-link">Email →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MISIÓN & VISIÓN -->
+<section class="bg2">
+  <span class="tag">Por qué hacemos esto</span>
+  <h2>Misión y <em>visión.</em></h2>
+  <div class="divider"></div>
+  <div class="services-grid">
+    <div class="mission-card reveal">
+      <div class="mission-icon">🎯</div>
+      <div class="mission-label">Misión</div>
+      <p class="mission-text">"Democratizar la inteligencia de datos para las empresas paraguayas. Que cada PYME tenga las herramientas que antes eran solo para las grandes."</p>
+    </div>
+    <div class="mission-card reveal d2">
+      <div class="mission-icon">🔭</div>
+      <div class="mission-label">Visión</div>
+      <p class="mission-text">"Que ninguna empresa paraguaya tenga que tomar decisiones importantes sin datos confiables, en tiempo real y comprensibles para toda la organización."</p>
+    </div>
+    <div class="mission-card reveal d4">
+      <div class="mission-icon">🤝</div>
+      <div class="mission-label">Promesa</div>
+      <p class="mission-text">"Entendemos tu negocio antes de proponer cualquier solución. Si no podemos ayudarte, te lo decimos honestamente — y te orientamos a quién sí puede."</p>
+    </div>
+  </div>
+</section>
+
+<!-- VALORES -->
+<section id="valores">
+  <span class="tag">Cómo trabajamos</span>
+  <h2>Los valores que guían <em>cada proyecto.</em></h2>
+  <div class="divider"></div>
+  <div class="values-grid">
+    <div class="value-card reveal">
+      <div class="value-num">01</div>
+      <div>
+        <h3>Negocio primero, tecnología después</h3>
+        <p>Empezamos siempre por entender cómo funciona tu empresa, qué decisiones tomás y qué información necesitás. La tecnología es el medio, no el fin.</p>
+      </div>
+    </div>
+    <div class="value-card reveal d2">
+      <div class="value-num">02</div>
+      <div>
+        <h3>Claridad sobre tecnicismo</h3>
+        <p>Explicamos todo en lenguaje de negocio, no de IT. Si no podemos explicarlo simple, es porque no lo entendemos bien nosotros — y eso nunca es aceptable.</p>
+      </div>
+    </div>
+    <div class="value-card reveal d3">
+      <div class="value-num">03</div>
+      <div>
+        <h3>Resultados medibles</h3>
+        <p>No vendemos proyectos: vendemos resultados. Antes de empezar, definimos exactamente qué va a cambiar en tu empresa y cómo lo vamos a medir.</p>
+      </div>
+    </div>
+    <div class="value-card reveal d4">
+      <div class="value-num">04</div>
+      <div>
+        <h3>Autonomía, no dependencia</h3>
+        <p>El objetivo es que tu equipo pueda operar solo. Si terminamos el proyecto y seguís necesitándonos para lo básico, hicimos algo mal.</p>
+      </div>
+    </div>
+    <div class="value-card reveal">
+      <div class="value-num">05</div>
+      <div>
+        <h3>Honestidad brutal</h3>
+        <p>Si una solución no te sirve, te lo decimos. Si el presupuesto no alcanza para lo que necesitás, te lo decimos. Preferimos perder un cliente que hacer un trabajo mal hecho.</p>
+      </div>
+    </div>
+    <div class="value-card reveal d2">
+      <div class="value-num">06</div>
+      <div>
+        <h3>Paraguay primero</h3>
+        <p>Entendemos el contexto local: los sistemas que se usan, los procesos reales, el idioma del negocio. No somos una consultora internacional que aplica plantillas genéricas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POR QUÉ PARAGUAY -->
+<section class="bg2">
+  <span class="tag">Contexto local</span>
+  <h2>Por qué Paraguay <em>necesita esto.</em></h2>
+  <div class="divider"></div>
+  <div class="two-col">
+    <div>
+      <p style="font-size:16px; color:var(--gray); line-height:1.75; margin-bottom:20px;">Paraguay tiene más de 300.000 empresas activas. La gran mayoría son PYMEs que manejan datos todos los días — pero sin las herramientas ni el conocimiento para convertirlos en ventaja competitiva.</p>
+      <p style="font-size:16px; color:var(--gray); line-height:1.75; margin-bottom:20px;">El acceso a herramientas de Business Intelligence en Paraguay es limitado. Las consultoras grandes son caras y lentas. Los analistas freelance no siempre conocen los sistemas locales. Y el mercado de software BI no está adaptado a la realidad de una PYME paraguaya.</p>
+      <p style="font-size:16px; color:var(--gray); line-height:1.75;">ASUDATA cierra esa brecha. Con precios accesibles, implementación rápida y un conocimiento genuino del negocio paraguayo.</p>
+    </div>
+    <div>
+      <div class="timeline">
+        <div class="timeline-item active">
+          <div class="timeline-dot">📊</div>
+          <div class="timeline-content">
+            <div class="timeline-year">La realidad hoy</div>
+            <div class="timeline-title">300K+ empresas activas en PY</div>
+            <p class="timeline-text">La mayoría sin acceso real a Business Intelligence. Tomando decisiones con información vieja o incompleta.</p>
+          </div>
+        </div>
+        <div class="timeline-item active">
+          <div class="timeline-dot">💡</div>
+          <div class="timeline-content">
+            <div class="timeline-year">El problema</div>
+            <div class="timeline-title">Las herramientas existen. El gap es de implementación.</div>
+            <p class="timeline-text">Power BI, Python y Google Cloud son accesibles — pero sin alguien que los adapte al negocio real, son inútiles.</p>
+          </div>
+        </div>
+        <div class="timeline-item active">
+          <div class="timeline-dot">🚀</div>
+          <div class="timeline-content">
+            <div class="timeline-year">La solución</div>
+            <div class="timeline-title">ASUDATA: implementación práctica y local</div>
+            <p class="timeline-text">Combinamos herramientas de clase mundial con conocimiento del negocio paraguayo. En semanas, no meses.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-glow"></div>
+  <h2>¿Querés trabajar <em>con nosotros?</em></h2>
+  <p class="cta-pitch">Primera llamada gratuita. Andrés Meza atiende personalmente cada consulta.</p>
+  <p class="cta-promise">"Si podemos ayudarte, te lo digo. Si no, también." — Andrés</p>
+  <div class="cta-btns">
+    <a href="contacto.html" class="btn btn-primary">Hablar con Andrés →</a>
+    <a href="industrias.html" class="btn btn-outline">Ver casos por industria</a>
+  </div>
+</section>
+
+<footer>
+  <div>
+    <a href="index.html" class="footer-logo">AsuData<span>.</span></a>
+    <p class="footer-tagline">Convertimos tus datos en decisiones. Paraguay & Latam.</p>
+    <div class="footer-socials">
+      <a href="#" title="LinkedIn">in</a>
+      <a href="#" title="Instagram">ig</a>
+      <a href="#" title="TikTok">tt</a>
+      <a href="#" title="Facebook">fb</a>
+    </div>
+  </div>
+  <div class="footer-col">
+    <h4>Servicios</h4>
+    <ul>
+      <li><a href="soluciones.html#dashboards">Dashboards</a></li>
+      <li><a href="soluciones.html#automatizacion">Automatización</a></li>
+      <li><a href="soluciones.html#ia">IA Aplicada</a></li>
+      <li><a href="paquetes.html">Ver paquetes</a></li>
+    </ul>
+  </div>
+  <div class="footer-col">
+    <h4>Empresa</h4>
+    <ul>
+      <li><a href="nosotros.html">Quiénes somos</a></li>
+      <li><a href="industrias.html">Industrias</a></li>
+      <li><a href="nosotros.html#valores">Nuestros valores</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </div>
+  <div class="footer-col">
+    <h4>Contacto</h4>
+    <ul>
+      <li><a href="mailto:info@asudata.net">info@asudata.net</a></li>
+      <li><a href="tel:+5950985309007">+595 0985 309 007</a></li>
+      <li><a href="https://wa.me/595985309007">WhatsApp</a></li>
+      <li><a href="contacto.html">Agendar llamada</a></li>
+    </ul>
+  </div>
+</footer>
+<div class="footer-bottom">
+  <p>© 2026 ASUDATA. Fundada por Andrés Meza. Todos los derechos reservados.</p>
+  <p><a href="#">Política de privacidad</a></p>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
