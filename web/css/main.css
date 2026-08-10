@@ -115,7 +115,7 @@ nav.scrolled{background:rgba(15,24,48,0.95)}
 .pkg-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
 .pkg-card{background:var(--dark);border:1px solid var(--border);border-radius:var(--r-lg);padding:26px}
 .pkg-card h4{font-size:1rem;margin-bottom:14px;min-height:2.4em}
-.pkg-price{font-family:var(--font-heading);font-size:1.4rem;color:var(--light);font-weight:800;margin-bottom:6px}
+.pkg-price{font-family:var(--font-body);font-variant-numeric:tabular-nums;font-size:1.5rem;color:var(--cyan);font-weight:700;letter-spacing:-0.3px;margin-bottom:6px}
 .pkg-entrega{font-size:13px;color:var(--gray)}
 .line-more{display:inline-block;margin-top:24px;font-size:14px;font-weight:700;color:var(--cyan)}
 .line-sub{margin-top:44px;padding-top:36px;border-top:1px solid var(--border)}
