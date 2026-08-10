@@ -106,6 +106,23 @@ nav.scrolled{background:rgba(15,24,48,0.95)}
 .accordion-panel-inner p{font-size:15px;margin-bottom:12px;max-width:520px}
 .accordion-panel-inner .card-link{font-size:13.5px;font-weight:700;color:var(--cyan)}
 
+/* ===== SERVICE LINE / PRICING ===== */
+.line{max-width:900px;margin:0 auto}
+.line-tag{color:var(--warm);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px}
+.line h2{margin:10px 0 6px}
+.line-tagline{font-family:var(--font-heading);font-weight:700;color:var(--cyan);font-size:1.05rem;margin-bottom:14px}
+.line-desc{max-width:620px;margin-bottom:36px}
+.pkg-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.pkg-card{background:var(--dark);border:1px solid var(--border);border-radius:var(--r-lg);padding:26px}
+.pkg-card h4{font-size:1rem;margin-bottom:14px;min-height:2.4em}
+.pkg-price{font-family:var(--font-heading);font-size:1.4rem;color:var(--light);font-weight:800;margin-bottom:6px}
+.pkg-entrega{font-size:13px;color:var(--gray)}
+.line-more{display:inline-block;margin-top:24px;font-size:14px;font-weight:700;color:var(--cyan)}
+.line-sub{margin-top:44px;padding-top:36px;border-top:1px solid var(--border)}
+.line-sub h4{margin-bottom:16px}
+.line-sub-note{font-size:14px;background:rgba(232,147,90,0.08);border:1px solid rgba(232,147,90,0.25);color:var(--warm);padding:14px 18px;border-radius:var(--r-md);margin-top:16px}
+.legal-note{max-width:900px;margin:48px auto 0;font-size:13px;color:var(--gray);border-top:1px solid var(--border);padding-top:24px}
+
 /* ===== CASE PREVIEW ===== */
 .case-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;margin-top:40px}
 .case-card{background:var(--dark-surface);border:1px solid var(--border);border-radius:var(--r-lg);padding:32px}
