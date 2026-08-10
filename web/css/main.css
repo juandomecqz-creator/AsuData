@@ -118,6 +118,17 @@ nav.scrolled{background:rgba(15,24,48,0.95)}
 .pkg-price{font-family:var(--font-body);font-variant-numeric:tabular-nums;font-size:1.5rem;color:var(--cyan);font-weight:700;letter-spacing:-0.3px;margin-bottom:6px}
 .pkg-entrega{font-size:13px;color:var(--gray)}
 .line-more{display:inline-block;margin-top:24px;font-size:14px;font-weight:700;color:var(--cyan)}
+
+/* ===== TIER CARDS (Sistema de Datos) ===== */
+.tier-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+.tier-card{background:var(--dark);border:1px solid var(--border);border-radius:var(--r-lg);padding:32px;display:flex;flex-direction:column}
+.tier-card.featured{border-color:rgba(0,212,232,0.5);box-shadow:var(--glow-cyan)}
+.tier-name{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--warm)}
+.tier-card h3{margin:8px 0 4px}
+.tier-price{font-family:var(--font-body);font-variant-numeric:tabular-nums;font-size:1.7rem;font-weight:700;color:var(--cyan);letter-spacing:-0.3px;margin-bottom:20px}
+.tier-rows{display:flex;flex-direction:column;gap:14px;margin-bottom:24px;flex:1}
+.tier-row dt{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;color:var(--gray);margin-bottom:3px}
+.tier-row dd{font-size:14.5px;color:var(--light);line-height:1.5}
 .line-sub{margin-top:44px;padding-top:36px;border-top:1px solid var(--border)}
 .line-sub h4{margin-bottom:16px}
 .line-sub-note{font-size:14px;background:rgba(232,147,90,0.08);border:1px solid rgba(232,147,90,0.25);color:var(--warm);padding:14px 18px;border-radius:var(--r-md);margin-top:16px}
