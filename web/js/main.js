@@ -26,6 +26,18 @@ document.querySelectorAll('.nav-links a').forEach(link => {
   }
 });
 
+// Accordion (single open at a time)
+document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+  trigger.addEventListener('click', () => {
+    const item = trigger.closest('.accordion-item');
+    const wasOpen = item.classList.contains('open');
+    item.parentElement.querySelectorAll('.accordion-item.open').forEach(open => {
+      open.classList.remove('open');
+    });
+    if (!wasOpen) item.classList.add('open');
+  });
+});
+
 // Reveal on scroll
 const revealEls = document.querySelectorAll('.reveal');
 if (revealEls.length) {
