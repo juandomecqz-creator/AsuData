@@ -74,7 +74,7 @@ web/
 ## Footer (todas las páginas)
 
 - Fondo `--dark-surface`, 3 columnas: logo+tagline / links del mapa del sitio / contacto
-  (WhatsApp, email `info@asudata.net`, San Lorenzo, Paraguay)
+  (WhatsApp, email `asudatapy@gmail.com`, San Lorenzo, Paraguay)
 - Línea legal: © AsuData 2026
 - Sin redes sociales por ahora
 
