@@ -18,7 +18,7 @@ ni el `CLAUDE.md` ni la decisión de este spec — se descartan por completo.
    `soluciones.html` (no mapean al nuevo sitemap). `css/main.css` y `js/main.js` se
    reescriben desde cero (el contenido actual usa paleta clara navy/verde, incompatible).
 2. **Contacto:** sin formulario ni backend. Botón directo a WhatsApp
-   (`https://wa.me/595985309007`) como acción principal en toda página con CTA de contacto.
+   (`https://wa.me/595976211653`) como acción principal en toda página con CTA de contacto.
 3. **Logo:** usar `INSTAGRAM/logo asu data sin fondo.png` (fondo transparente), copiado a
    `web/assets/logo.png`. Reemplaza cualquier logo de solo texto.
 4. **Paleta:** se mantiene la definida en `CLAUDE.md`, con un ajuste validado contra

@@ -9,7 +9,7 @@ servicio profesional. Andrés (cofundador original) queda fuera de la operación
 momento — Juan hace el 100% del trabajo. **No mencionar nombres propios en ningún lado del
 sitio** (ver sección Nosotros).
 
-- Contacto: asudatapy@gmail.com · +595 0985 309 007
+- Contacto: asudatapy@gmail.com · +595 0976 211 653
 - Dominio: asudatapy.net — **pendiente de liberar, no bloquea el desarrollo, sí la publicación**
 - Sitio actual (a reemplazar): landing de una sola página en Wix, con copy 100% centrado en
   datos y paquetes Spark/Pulse/Edge — **esos paquetes ya no existen, no reutilizar ese copy**
