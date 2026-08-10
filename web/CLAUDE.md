@@ -53,17 +53,19 @@ líneas como una lista plana de servicios.
 Sitio multi-página estático, no landing de una sola página.
 
 1. **Inicio** — hero con la narrativa de posicionamiento (datos → decisiones, las 5 líneas
-   como instrumentos), casos destacados, CTA de contacto
+   como instrumentos), casos destacados (Aarón, ore roga, Del Moral — sin página propia,
+   viven solo acá), CTA de contacto
 2. **Servicios** — overview de las 5 líneas con su paquete resumido cada una. Si a futuro
    una línea (Web, Datos, Apps o Marca) crece mucho, puede desprenderse a su propia página —
    está abierto, no cerrado
 3. **Sistema de Datos para Empresas** — página propia (única línea con página dedicada hoy,
    por ser la más compleja y la insignia). Explicar los 3 tiers a fondo
-4. **Casos** — Aarón, ore roga y Del Moral **juntos en una sola página**, no separados por
-   línea de servicio. Enfoque hiperlocal (ver sección Contenido)
-5. **Nosotros** — institucional, serio. **Sin nombres propios** (ni Juan ni Andrés). Foco en
+4. **Nosotros** — institucional, serio. **Sin nombres propios** (ni Juan ni Andrés). Foco en
    la marca y el método, no en las personas. Sin mencionar el arreglo societario
-6. **Contacto** — formulario + WhatsApp + datos de contacto
+5. **Contacto** — formulario + WhatsApp + datos de contacto
+
+Nota (decisión posterior, 2026-08-10): se sacó la página propia de Casos — los 3 casos
+quedan únicamente en la sección "Casos destacados" de Inicio, no como página separada.
 
 ## Las 5 líneas de servicio y sus paquetes
 
@@ -118,7 +120,7 @@ Reemplaza por completo a los antiguos paquetes Spark/Pulse/Edge del sitio viejo.
 material completo solicitado (textos, fotos/logo, accesos). Este es un texto legal fijo que
 debe aparecer junto a cualquier tabla de precios/plazos en el sitio.
 
-## Casos para la página de Casos (hiperlocal)
+## Casos para la sección de Casos destacados en Inicio (hiperlocal)
 
 Usar SOLO estos tres, con nombre y rubro real — nunca casos genéricos de LatAm:
 
